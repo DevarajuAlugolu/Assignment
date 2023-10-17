@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&family=Urbanist:wght@300;500&family=Ms+Madi&display=swap');
+
+html,
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20vh 0 0 0;
+}
+
+button {
+	background-color: rgb(222, 222, 220);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+	border-left: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	border-right: 2px solid rgba(0, 0, 0, 0.4);
+	border-top: 2px solid rgba(255, 255, 255, 0.5);
+	color: #493f40;
+	font-family: 'Urbanist';
+	font-weight: 500;
+	height: 40px;
+	margin: 3px;
+	width: 50px;
+}
+
+button:active {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	border-left: 2px solid rgba(0, 0, 0, 0.4);
+	border-right: 2px solid rgba(255, 255, 255, 0.5);
+	border-top: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+#calculation {
+	font-size: 20px;
+	margin-bottom: -20px;
+	margin-top: 10px;
+}
+
+#result {
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.calculator {
+	background-color: rgb(225, 224, 222);
+	border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	border-top: 3px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+	height: 350px;
+	margin: auto;
+	padding: 15px 10px 10px 10px;
+	width: 237px;
+}
+
+.display {
+	background-color: #d3ded6;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+	color: #493f40;
+	font-family: 'Roboto Slab';
+	font-weight: 200;
+	margin: auto auto 10px auto;
+	padding: 1px 10px;
+	text-align: right;
+	width: 88%;
+	overflow: hidden;
+}
+
+.greykey {
+	background-color: rgb(174, 176, 175);
+	color: white;
+}
+
+.limegreen {
+	background-color: rgb(168, 206, 85);
+	color: white;
+}
+
+.tall {
+	float: right;
+	height: 85px;
+	width: 50px;
+}
+
+.title {
+	color: gray;
+	font-size: 10px;
+	font-family: 'Urbanist';
+	letter-spacing: 3px;
+	margin: -10px 3px 3px 0;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.wide {
+	height: 40px;
+	width: 110px;
+}

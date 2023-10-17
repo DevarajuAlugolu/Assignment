@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section class="container">
+			<header>Survey Form</header>
+			<form class="form" id="form">
+				<div class="column">
+					<div class="input-box">
+						<label for="first-name"
+							>First Name <span class="asterik">*</span></label
+						>
+						<input
+							id="first-name"
+							type="text"
+							placeholder="Enter first name"
+							required
+						/>
+					</div>
+					<div class="input-box">
+						<label for="last-name"
+							>Last Name<span class="asterik">*</span></label
+						>
+						<input
+							id="last-name"
+							type="text"
+							placeholder="Enter last name"
+							required
+						/>
+					</div>
+				</div>
+				<div class="gender-box">
+					<h3>Gender<span class="asterik">*</span></h3>
+					<div class="gender-option">
+						<div class="gender">
+							<input
+								type="radio"
+								id="check-male"
+								name="gender"
+								checked
+							/>
+							<label for="check-male">male</label>
+						</div>
+						<div class="gender">
+							<input
+								type="radio"
+								id="check-female"
+								name="gender"
+							/>
+							<label for="check-female">Female</label>
+						</div>
+						<div class="gender">
+							<input
+								type="radio"
+								id="check-other"
+								name="gender"
+							/>
+							<label for="check-other">prefer not to say</label>
+						</div>
+					</div>
+				</div>
+				<div class="input-box">
+					<label for="email"
+						>Email Address<span class="asterik">*</span></label
+					>
+					<input
+						id="email"
+						type="email"
+						placeholder="Enter email address"
+						required
+					/>
+				</div>
+				<div class="column">
+					<div class="input-box">
+						<label for="phone"
+							>Phone Number<span class="asterik">*</span></label
+						>
+						<input
+							id="phone"
+							type="tel"
+							placeholder="Enter phone number"
+							required
+						/>
+					</div>
+					<div class="input-box">
+						<label for="dob"
+							>Date of Birth<span class="asterik">*</span></label
+						>
+						<input
+							id="dob"
+							type="date"
+							placeholder="Enter birth date"
+							required
+						/>
+					</div>
+				</div>
+				<div class="input-box">
+					<label for="country"
+						>country<span class="asterik">*</span></label
+					>
+					<div class="select-box">
+						<select name="country" id="country" required>
+							<option hidden>Select Country</option>
+							<option value="America">America</option>
+							<option value="Japan">Japan</option>
+							<option value="India">India</option>
+							<option value="Nepal">Nepal</option>
+							<option value="Canada">Canada</option>
+							<option value="Australia">Australia</option>
+							<option value="Germany">Germany</option>
+							<option value="France">France</option>
+							<option value="United Kingdom">
+								United Kingdom
+							</option>
+							<option value="Brazil">Brazil</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="input-box">
+					<label for="profession"
+						>Profession<span class="asterik">*</span></label
+					>
+					<input
+						id="profession"
+						type="text"
+						placeholder="Enter profession"
+						required
+					/>
+				</div>
+
+				<input type="submit" value="submit" class="button" />
+				<input type="reset" value="reset" class="button" />
+			</form>
+		</section>
+
+		<!-- Modal -->
+		<div class="modal hidden">
+			<button class="close-modal-cross">&times;</button>
+			<h1>Form Data</h1>
+			<div id="inner-modal"></div>
+			<button class="close-modal">close</button>
+		</div>
+		<div class="overlay hidden"></div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
